@@ -10,7 +10,8 @@ import org.opencv.highgui.Highgui;
 public class Main {
     public static void main(String[] args){
         // change this path to match your configuration
-        System.load("/ShardDemo/lib/x64/opencv_java2412.dll");
+        String workingDir = System.getProperty("user.dir");
+        System.load(workingDir + "/lib/x64/opencv_java2412.dll");
 
         if(args.length == 0) {
             System.out.println("No file given. Exiting...");
